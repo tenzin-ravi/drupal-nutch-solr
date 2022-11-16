@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+<property>
+ <name>http.agent.name</name>
+ <value>HSOFT Spider</value>
+</property>
+<property>
+  <name>tika.use_boilerpipe</name>
+  <value>true</value>
+</property>
+<property>
+  <name>tika.boilerpipe.extractor</name>
+  <value>ArticleExtractor</value>
+</property>
+<property>
+ <name>plugin.includes</name>
+ <value>index-extra|index-more|protocol-http|urlfilter-regex|parse-(html|tika|metatags)|index-(basic|anchor|metadata)|indexer-solr|scoring-opi
+c|urlnormalizer-(pass|regex|basic)</value>
+ </property>
+ <property>
+  <name>metatags.names</name>
+ <value>*</value>
+</property>
+<property>
+ <name>index.parse.md</name>
+ <value>*</value>
+</property>
+<property>
+ <name>index.metadata</name>
+ <value>*</value>
+</property>
+
+<property>
+    <name>mimetype.filter.file</name>
+    <value>mimetype-filter.txt</value>
+</property>
+
+
+<property>
+    <name>mimetype.filter.file</name>
+    <value>mimetype-filter.pdf</value>
+</property>
+
+
+</configuration>
